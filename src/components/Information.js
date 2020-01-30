@@ -15,7 +15,7 @@ const Information = () => {
       <p>
         Facebook:{" "}
         <a href="https://www.facebook.com/josh.morley.10">
-          https://www.facebook.com/josh.morley.10
+          https://www.facebook.com/morleystuff
         </a>
       </p>
       <p>
