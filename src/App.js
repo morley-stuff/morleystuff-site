@@ -1,22 +1,38 @@
 import React from "react";
-import "./App.css";
-import ProfileList from "./components/ProfileList";
-import Intro from "./components/Intro";
-import { ReactComponent as FacebookIcon } from "./icons/facebook.svg";
-import { ReactComponent as GitHubIcon } from "./icons/github.svg";
-import { ReactComponent as LinkedInIcon } from "./icons/linkedin.svg";
-import { ReactComponent as TwitterIcon } from "./icons/twitter.svg";
+import "./App.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import { Container, Row, Col } from "react-bootstrap";
+import { ProfileCard } from "./components/ProfileCard";
+import profiles from "./data";
+import { HomeNav } from "./components/HomeNav";
 
 function App() {
   return (
-    <div className="App">
-      <Intro />
-      <ProfileList />
-      <FacebookIcon />
-      <GitHubIcon />
-      <LinkedInIcon />
-      <TwitterIcon />
-    </div>
+    <Container>
+      <Row>
+        <Col>
+          <HomeNav />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <h2>An exhaustive resource</h2>
+          <p>
+            This website was created to serve as an access point for all of my
+            public information. From online profiles, to professional and
+            educational experience, to contact methods.
+          </p>
+        </Col>
+      </Row>
+      <Row>
+        {profiles.map(data => (
+          <Col xs={3} className="mb-5" key={`${data.id}`}>
+            <ProfileCard data={data} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 }
 
