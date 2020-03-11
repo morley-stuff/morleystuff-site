@@ -27,7 +27,7 @@ function App() {
       </Row>
       <Row>
         {profiles.map(data => (
-          <Col xs={3} className="mb-5" key={`${data.id}`}>
+          <Col xs={3} md={2} className="mb-5" key={`${data.id}`}>
             <ProfileCard data={data} />
           </Col>
         ))}
