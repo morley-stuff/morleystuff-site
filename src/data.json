@@ -22,5 +22,29 @@
     "name": "Twitter",
     "image": "./icons/twitter.svg",
     "url": "https://twitter.com/morley_stuff"
+  },
+  {
+    "id": 5,
+    "name": "Instagram",
+    "image": "./icons/instagram.svg",
+    "url": "https://www.instagram.com/morleystuff/"
+  },
+  {
+    "id": 6,
+    "name": "Snapchat",
+    "image": "./icons/snapchat.svg",
+    "url": "https://www.snapchat.com/add/morley555"
+  },
+  {
+    "id": 7,
+    "name": "Steam",
+    "image": "./icons/steam.svg",
+    "url": "https://www.steamcommunity.com/id/bittuned"
+  },
+  {
+    "id": 8,
+    "name": "Youtube",
+    "image": "./icons/youtube.svg",
+    "url": "https://www.youtube.com/user/BitTuned"
   }
 ]
