@@ -33,16 +33,18 @@ function App() {
         ))}
       </Row>
       <Row>
-        <p>
-          Website
-          <br />
-          Built with{" "}
-          <a href="https://react-bootstrap.github.io/">React Bootstrap</a>
-          <br />
-          Hosted via <a href="https://aws.amazon.com/amplify/">AWS Amplify</a>
-          <br />
-          Icons from <a href="iconmonstr.com">IconMonstr</a>
-        </p>
+        <Col>
+          <p>
+            Website
+            <br />
+            Built with{" "}
+            <a href="https://react-bootstrap.github.io/">React Bootstrap</a>
+            <br />
+            Hosted via <a href="https://aws.amazon.com/amplify/">AWS Amplify</a>
+            <br />
+            Icons from <a href="iconmonstr.com">IconMonstr</a>
+          </p>
+        </Col>
       </Row>
     </Container>
   );
