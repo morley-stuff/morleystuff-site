@@ -17,11 +17,11 @@ function App() {
       </Row>
       <Row>
         <Col>
-          <h2>An exhaustive resource</h2>
+          <h2>Joshua Morley</h2>
           <p>
-            This website was created to serve as an access point for all of my
-            public information. From online profiles, to professional and
-            educational experience, to contact methods.
+            DevOps Engineer, Java Developer. <br />
+            This website is a work in progress to consolidate my public and
+            personal information.
           </p>
         </Col>
       </Row>
@@ -31,6 +31,18 @@ function App() {
             <ProfileCard data={data} />
           </Col>
         ))}
+      </Row>
+      <Row>
+        <p>
+          Website
+          <br />
+          Built with{" "}
+          <a href="https://react-bootstrap.github.io/">React Bootstrap</a>
+          <br />
+          Hosted via <a href="https://aws.amazon.com/amplify/">AWS Amplify</a>
+          <br />
+          Icons from <a href="iconmonstr.com">IconMonstr</a>
+        </p>
       </Row>
     </Container>
   );
