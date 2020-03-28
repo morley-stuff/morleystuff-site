@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 
 export function HomeNav() {
   return (
@@ -7,6 +7,12 @@ export function HomeNav() {
       <Navbar.Brand style={{ fontSize: 50, fontWeight: "bold" }}>
         Morley Stuff
       </Navbar.Brand>
+      <Navbar.Collapse>
+        <Nav>
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/profiles">Profiles</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 }

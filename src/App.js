@@ -3,9 +3,11 @@ import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col } from "react-bootstrap";
-import { ProfileCard } from "./components/ProfileCard";
 import profiles from "./data";
 import { HomeNav } from "./components/HomeNav";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ProfilesPage from "./components/ProfilesPage";
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
@@ -15,23 +17,15 @@ function App() {
           <HomeNav />
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <h2>Joshua Morley</h2>
-          <p>
-            DevOps Engineer, Java Developer. <br />
-            This website is a work in progress to consolidate my public and
-            personal information.
-          </p>
-        </Col>
-      </Row>
-      <Row>
-        {profiles.map(data => (
-          <Col xs={3} md={2} className="mb-5" key={`${data.id}`}>
-            <ProfileCard data={data} />
-          </Col>
-        ))}
-      </Row>
+      <Router>
+        <Switch>
+          <Route
+            path="/profiles"
+            render={props => <ProfilesPage profiles={profiles} />}
+          />
+          <Route path="/" component={HomePage} />
+        </Switch>
+      </Router>
       <Row>
         <Col>
           <p>
