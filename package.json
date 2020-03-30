@@ -43,6 +43,6 @@
   },
   "resolutions": {
     "serialize-javascript": "^2.1.1",
-    "@babel/preset-env": "7.9.0"
+    "@babel/preset-env": "^7.9.0"
   }
 }
