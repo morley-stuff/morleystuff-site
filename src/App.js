@@ -1,13 +1,15 @@
 import React from "react";
-import "./App.scss";
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col } from "react-bootstrap";
-import profiles from "./data";
-import { HomeNav } from "./components/HomeNav";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ProfilesPage from "./components/ProfilesPage";
+
+import profiles from "./data";
+
 import HomePage from "./components/HomePage";
+import ProfilesPage from "./components/ProfilesPage";
+import { HomeNav } from "./components/HomeNav";
 
 function App() {
   return (
