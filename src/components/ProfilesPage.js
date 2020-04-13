@@ -1,14 +1,14 @@
 import React from "react";
 
 import { Row, Col } from "react-bootstrap";
-import { ProfileCard } from "./ProfileCard";
+import { ProfileLink } from "./ProfileLink";
 
 function ProfilesPage(props) {
   return (
-    <Row>
+    <Row className="profiles">
       {props.profiles.map(data => (
-        <Col xs={3} md={2} className="mb-5" key={`${data.id}`}>
-          <ProfileCard data={data} />
+        <Col xs={3} md={2} className="my-3" key={`${data.id}`}>
+          <ProfileLink data={data} />
         </Col>
       ))}
     </Row>

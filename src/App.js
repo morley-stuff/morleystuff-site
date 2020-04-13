@@ -13,36 +13,39 @@ import { HomeNav } from "./components/HomeNav";
 
 function App() {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <HomeNav />
-        </Col>
-      </Row>
-      <Router>
-        <Switch>
-          <Route
-            path="/profiles"
-            render={props => <ProfilesPage profiles={profiles} />}
-          />
-          <Route path="/" component={HomePage} />
-        </Switch>
-      </Router>
-      <Row>
-        <Col>
-          <p>
-            Website
-            <br />
-            Built with{" "}
-            <a href="https://react-bootstrap.github.io/">React Bootstrap</a>
-            <br />
-            Hosted via <a href="https://aws.amazon.com/amplify/">AWS Amplify</a>
-            <br />
-            Icons from <a href="iconmonstr.com">IconMonstr</a>
-          </p>
-        </Col>
-      </Row>
-    </Container>
+    <div className="root">
+      <Container>
+        <Row>
+          <Col>
+            <HomeNav />
+          </Col>
+        </Row>
+        <Router>
+          <Switch>
+            <Route
+              path="/profiles"
+              render={props => <ProfilesPage profiles={profiles} />}
+            />
+            <Route path="/" component={HomePage} />
+          </Switch>
+        </Router>
+        <Row>
+          <Col bg="light">
+            <p>
+              Website
+              <br />
+              Built with{" "}
+              <a href="https://react-bootstrap.github.io/">React Bootstrap</a>
+              <br />
+              Hosted via{" "}
+              <a href="https://aws.amazon.com/amplify/">AWS Amplify</a>
+              <br />
+              Icons from <a href="iconmonstr.com">IconMonstr</a>
+            </p>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 }
 

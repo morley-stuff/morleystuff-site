@@ -3,7 +3,7 @@ import { Nav, Navbar } from "react-bootstrap";
 
 export function HomeNav() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg">
       <Navbar.Brand style={{ fontSize: 40, fontWeight: "bold" }}>
         Morley Stuff
       </Navbar.Brand>

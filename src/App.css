@@ -1,3 +1,20 @@
+.root {
+  background-color: #46494c;
+}
+
+.profiles {
+  background-color: #dcdcdd;
+}
+
+.container {
+  background-color: #c5c3c6;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 .App {
   text-align: center;
 }
