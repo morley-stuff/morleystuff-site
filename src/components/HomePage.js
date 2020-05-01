@@ -5,7 +5,7 @@ function HomePage() {
   return (
     <Row>
       <Col>
-        <h2>Joshua Morley</h2>
+        <h3>Joshua Morley</h3>
         <p>
           DevOps Engineer, Java Developer. <br />
           This website is a work in progress to consolidate my public and

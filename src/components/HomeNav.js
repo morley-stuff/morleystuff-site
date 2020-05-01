@@ -4,7 +4,7 @@ import { Nav, Navbar } from "react-bootstrap";
 export function HomeNav() {
   return (
     <Navbar expand="lg">
-      <Navbar.Brand style={{ fontSize: 40, fontWeight: "bold" }}>
+      <Navbar.Brand style={{ fontSize: 35, fontWeight: "bold" }}>
         Morley Stuff
       </Navbar.Brand>
       <Navbar.Toggle />
