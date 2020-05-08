@@ -14,35 +14,30 @@ import { HomeNav } from "./components/HomeNav";
 function App() {
   return (
     <div className="root">
-      <Container>
-        <HomeNav />
+      <HomeNav />
+      <Router>
+        <Switch>
+          <Route
+            path="/profiles"
+            render={(props) => <ProfilesPage profiles={profiles} />}
+          />
+          <Route path="/" component={HomePage} />
+        </Switch>
+      </Router>
+      <div className="fixed-bottom bg-light">
         <Container>
-          <Router>
-            <Switch>
-              <Route
-                path="/profiles"
-                render={(props) => <ProfilesPage profiles={profiles} />}
-              />
-              <Route path="/" component={HomePage} />
-            </Switch>
-          </Router>
-          <Row>
-            <Col>
-              <p>
-                Website
-                <br />
-                Built with{" "}
-                <a href="https://react-bootstrap.github.io/">React Bootstrap</a>
-                <br />
-                Hosted via{" "}
-                <a href="https://aws.amazon.com/amplify/">AWS Amplify</a>
-                <br />
-                Icons from <a href="iconmonstr.com">IconMonstr</a>
-              </p>
-            </Col>
-          </Row>
+          <p>
+            Website
+            <br />
+            Built with{" "}
+            <a href="https://react-bootstrap.github.io/">React Bootstrap</a>
+            <br />
+            Hosted via <a href="https://aws.amazon.com/amplify/">AWS Amplify</a>
+            <br />
+            Icons from <a href="iconmonstr.com">IconMonstr</a>
+          </p>
         </Container>
-      </Container>
+      </div>
     </div>
   );
 }
