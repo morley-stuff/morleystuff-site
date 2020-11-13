@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Facebook",
-    "image": "./icons/facebook.svg",
+    "image": "/icons/facebook.svg",
     "url": "https://www.facebook.com/morleystuff"
   },
   {
