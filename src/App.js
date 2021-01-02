@@ -1,42 +1,27 @@
-import React from "react";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
-import profiles from "./data";
-
-import HomePage from "./components/HomePage";
-import ProfilesPage from "./components/ProfilesPage";
-import { HomeNav } from "./components/HomeNav";
+import Home from "./components/Home/Home"
+import Profiles from "./components/Profiles/Profiles";
+import MyNavBar from "./components/Nav/MyNavBar";
 
 function App() {
   return (
-    <div className="root">
-      <HomeNav />
+    <div className="App">
+      <MyNavBar />
       <Router>
         <Switch>
           <Route
             path="/profiles"
-            render={(props) => <ProfilesPage profiles={profiles} />}
+            component={Profiles}
           />
-          <Route path="/" component={HomePage} />
+          <Route path="/" component={Home} />
         </Switch>
       </Router>
       <div className="fixed-bottom bg-light">
-        <Container>
-          <p>
-            Website
-            <br />
-            Built with{" "}
-            <a href="https://react-bootstrap.github.io/">React Bootstrap</a>
-            <br />
-            Hosted via <a href="https://aws.amazon.com/amplify/">AWS Amplify</a>
-            <br />
-            Icons from <a href="iconmonstr.com">IconMonstr</a>
-          </p>
-        </Container>
+        <Container>Morleystuff</Container>
       </div>
     </div>
   );
