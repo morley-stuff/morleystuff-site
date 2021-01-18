@@ -5,11 +5,10 @@ import profiles from "../../data/profiles.json"
 class Profiles extends Component {
     render() {
         return (
-            <div>
+            <Container>
                 These are my profiles.
-            
                 {profiles.map(profile => <Container><a href={profile.url}>{profile.name}</a></Container>)}
-            </div>
+            </Container>
         );
     }
 }
