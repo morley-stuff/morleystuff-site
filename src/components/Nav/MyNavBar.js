@@ -11,6 +11,8 @@ class MyNavBar extends Component {
                 <Navbar.Collapse>
                     <Nav>
                         <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/professional">Professional</Nav.Link>
+                        <Nav.Link href="/social">Social</Nav.Link>
                         <Nav.Link href="/profiles">Profiles</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

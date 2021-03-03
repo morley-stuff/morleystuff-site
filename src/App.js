@@ -1,10 +1,11 @@
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home/Home"
 import Profiles from "./components/Profiles/Profiles";
+import Social from "./components/Social/Social"
+import Professional from "./components/Professional/Professional"
 import MyNavBar from "./components/Nav/MyNavBar";
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
       <MyNavBar />
       <Router>
         <Switch>
+          <Route path="/professional" component={Professional}/>
+          <Route path="/social" component={Social}/>
           <Route
             path="/profiles"
             component={Profiles}
