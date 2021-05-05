@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home/Home"
 import Profiles from "./components/Profiles/Profiles";
 import MyNavBar from "./components/Nav/MyNavBar";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -13,11 +14,20 @@ function App() {
       <MyNavBar />
       <Router>
         <Switch>
+          
           <Route
             path="/profiles"
             component={Profiles}
           />
-          <Route path="/" component={Home} />
+          <Route
+            path="/projects"
+            component={Projects}
+          />
+          <Route 
+            path="/" 
+            component={Home}
+          />
+          
         </Switch>
       </Router>
       <div className="fixed-bottom bg-light">

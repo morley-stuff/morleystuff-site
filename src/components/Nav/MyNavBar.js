@@ -12,6 +12,7 @@ class MyNavBar extends Component {
                     <Nav>
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/profiles">Profiles</Nav.Link>
+                        <Nav.Link href="/projects">Projects</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
