@@ -5,7 +5,7 @@ import { Nav, Navbar } from 'react-bootstrap'
 class MyNavBar extends Component {
     render() {
         return (
-            <Navbar expand="lg">
+            <Navbar bg="dark" variant="dark" expand="lg">
                 <Navbar.Brand>Morley Stuff</Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse>
