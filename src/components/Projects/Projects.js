@@ -5,8 +5,8 @@ class Projects extends Component {
     render() {
         return (
             <Container>
-                <CardDeck className="my-3">
-                    <Card border="dark" style={{minWidth: "30rem"}}>
+                <CardDeck>
+                    <Card className="my-3" border="dark" style={{minWidth: "30rem"}}>
                         <Card.Img src="images/morleystuff-site.png" style={{borderBottomStyle: "solid"}} />
                         <Card.Body>
                             <Card.Title style={{fontSize: 30, fontWeight: "bold"}}>MorleyStuff Site</Card.Title>
@@ -18,7 +18,7 @@ class Projects extends Component {
                             <Button variant="secondary" className="mx-1" href="https://github.com/morley-stuff/morleystuff-site">Src</Button>
                         </Card.Body>
                     </Card>
-                    <Card border="dark" style={{minWidth: "30rem"}}>
+                    <Card className="my-3" border="dark" style={{minWidth: "30rem"}}>
                         <Card.Body>
                             <Card.Img src="images/terraform.png" style={{borderBottomStyle: "solid"}} />
                             <Card.Title style={{fontSize: 30, fontWeight: "bold"}}>Terraform Repo</Card.Title>
